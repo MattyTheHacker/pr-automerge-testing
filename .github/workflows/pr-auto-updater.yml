@@ -6,7 +6,8 @@ jobs:
   pr-auto-update:
     name: Automatic PR Updater
     runs-on: ubuntu-latest
-    permissions: write-all
+    permissions: 
+      pull-requests: write
     steps:
       - uses: CSSUoB/pr-auto-updater@conflict-tag
         env:
