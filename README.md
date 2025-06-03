@@ -1,5 +1,3 @@
 # pr-automerge-testing
 
-
-
-goodbye
+blah blah
