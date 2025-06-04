@@ -10,9 +10,9 @@ jobs:
       pull-requests: write
       contents: write
     steps:
-      - uses: CSSUoB/pr-auto-updater@implement-workflow-running
+      - uses: CSSUoB/pr-auto-updater@main
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.PR_PAT }}'
           PR_FILTER: 'labelled'
           PR_LABELS: 'sync'
           MERGE_CONFLICT_ACTION: 'label'
